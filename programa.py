@@ -1,5 +1,8 @@
-from funcoes import *
+# App pra armazenar senhas e credenciais.
 
+from funcoes import * # Tradução: De funcoes.py importe *(todas as funções).
+
+# Loop infinito.
 while True:
     limpar_tela()
     print("Seja bem-vindo ao Guardador de Senhas!")
@@ -11,10 +14,13 @@ while True:
     limpar_tela()
     if opcao == 1:
         salvar_senha()
+        input("Aperte \"ENTER\" para voltar ao menu.")
     elif opcao == 2:
         mostrar_senhas()
-        input()
+        input("Aperte \"ENTER\" para voltar ao menu.")
     elif opcao == 3:
         limpar_senhas()
+        input("Aperte \"ENTER\" para voltar ao menu.")
     else:
         print("Opção inválida")
+        input("Aperte \"ENTER\" para voltar ao menu.")
